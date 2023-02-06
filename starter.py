@@ -40,12 +40,8 @@ for link in python_job_links:
     python_job = Job(job_title, company, description, location)
     python_job_list.append(python_job)
 
-print('\nCollected successfully ✅\n\n')
+print('Collected successfully ✅\n\n')
 # complete task
 for job in python_job_list:
-    print('=' * 50)
-    print(job.title)
-    print(job.company)
-    print(job.location)
-    print(job.desc)
+    job.job_listing_card()
 print('Here is the list of all python developer jobs 👨‍💻')
